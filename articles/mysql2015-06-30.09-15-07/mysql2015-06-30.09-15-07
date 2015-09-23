@@ -1,0 +1,1 @@
+<span style="color:#666666;font-family:ËÎÌו, Arial;line-height:26px;background-color:#FFFFFF;">select `TABLE_NAME` from `INFORMATION_SCHEMA`.`TABLES` where `TABLE_SCHEMA`='dbname' and `TABLE_NAME`='tablename'</span>

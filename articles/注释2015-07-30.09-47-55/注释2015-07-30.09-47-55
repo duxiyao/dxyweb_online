@@ -1,0 +1,71 @@
+<p class="MsoNormal">
+	<b>文件</b><b>(Files)</b><b>注释标签：</b>&nbsp;<br />
+<br />
+/**&nbsp;&nbsp;<br />
+* @Title: ${file_name}&nbsp;<br />
+* @Package ${package_name}&nbsp;<br />
+* @Description: ${todo}(用一句话描述该文件做什么)&nbsp;<br />
+* @author A18ccms A18ccms_gmail_com&nbsp;&nbsp;<br />
+* @date ${date} ${time}&nbsp;<br />
+* @version V1.0&nbsp;&nbsp;<br />
+<br />
+*/&nbsp;<br />
+<br />
+<b>类型</b><b>(Types)</b><b>注释标签（类的注释）：</b><b>&nbsp;</b><br />
+/**&nbsp;<br />
+* @ClassName: ${type_name}&nbsp;<br />
+* @Description: ${todo}(这里用一句话描述这个类的作用)&nbsp;<br />
+* @author A18ccms a18ccms_gmail_com&nbsp;<br />
+* @date ${date} ${time}&nbsp;<br />
+*&nbsp;<br />
+* ${tags}&nbsp;<br />
+*/&nbsp;
+</p>
+<p class="MsoNormal">
+	<br />
+<br />
+<b>字段</b><b>(Fields)</b><b>注释标签：</b><b>&nbsp;</b><br />
+/**&nbsp;<br />
+* @Fields ${field} : ${todo}(用一句话描述这个变量表示什么)&nbsp;<br />
+*/&nbsp;<br />
+<br />
+<b>构造函数标签：</b><b>&nbsp;</b><br />
+/**&nbsp;<br />
+* &lt;p&gt;Title: &lt;/p&gt;&nbsp;<br />
+* &lt;p&gt;Description: &lt;/p&gt;&nbsp;<br />
+* ${tags}&nbsp;<br />
+*/&nbsp;<br />
+<br />
+<br />
+<br />
+<b>方法</b><b>(Constructor &amp; Methods)</b><b>标签：</b><b>&nbsp;</b><br />
+/**&nbsp;<br />
+* @Title: ${enclosing_method}&nbsp;<br />
+* @Description: ${todo}(这里用一句话描述这个方法的作用)&nbsp;<br />
+* @param ${tags}&nbsp;&nbsp;&nbsp; 设定文件&nbsp;<br />
+* @return ${return_type}&nbsp;&nbsp;&nbsp; 返回类型&nbsp;<br />
+* @throws&nbsp;<br />
+*/&nbsp;<br />
+<br />
+<br />
+<br />
+<b>覆盖方法</b><b>(Overriding Methods)</b><b>标签：</b><b>&nbsp;</b><br />
+/* (非 Javadoc)&nbsp;<br />
+* &lt;p&gt;Title:
+${enclosing_method}&lt;/p&gt;&nbsp;<br />
+* &lt;p&gt;Description: &lt;/p&gt;&nbsp;<br />
+* ${tags}&nbsp;<br />
+* ${see_to_overridden}&nbsp;<br />
+*/&nbsp;<br />
+<br />
+<br />
+<br />
+<b>代表方法</b><b>(Delegate Methods)</b><b>标签：</b><b>&nbsp;</b><br />
+/**&nbsp;<br />
+* ${tags}&nbsp;<br />
+* ${see_to_target}&nbsp;<br />
+*/&nbsp;<br />
+<br />
+<!--[if !supportLineBreakNewLine]--><br />
+<!--[endif]--><span></span>
+</p>

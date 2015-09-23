@@ -1,0 +1,94 @@
+<p>
+	<a href="https://www.baidu.com/link?url=hLlzZxo-E-ikv7rExGgyQ_Tfu1oQzZTyTV0WczJTuGp-dMeEa-3f4AyLEPwHG0bJTT4hX1gzc04X3tES0q-kua&wd=android发短信权限&issp=1&f=8&ie=utf-8&tn=baiduhome_pg" target="_blank">https://www.baidu.com/link?url=hLlzZxo-E-ikv7rExGgyQ_Tfu1oQzZTyTV0WczJTuGp-dMeEa-3f4AyLEPwHG0bJTT4hX1gzc04X3tES0q-kua&amp;wd=android发短信权限&amp;issp=1&amp;f=8&amp;ie=utf-8&amp;tn=baiduhome_pg</a>
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<a href="http://www.cnblogs.com/yejiurui/archive/2013/10/28/3392305.html" target="_blank">http://www.cnblogs.com/yejiurui/archive/2013/10/28/3392305.html</a>
+</p>
+<p>
+	<br />
+</p>
+<p>
+	public void sentRequestMsg(Context context, String phoneMobile,<br />
+String message, boolean isDirectSend) {<br />
+<br />
+if (isDirectSend) {<br />
+// final String tag = "sentRequestMsg";<br />
+// 判断手机号的合法性<br />
+// 内容不能为空<br />
+String SENT_SMS_ACTION = "SENT_SMS_ACTION";<br />
+String DELIVERED_SMS_ACTION = "DELIVERED_SMS_ACTION";<br />
+<br />
+if (CheckUtil.checkMDN(phoneMobile) &amp;&amp; !TextUtils.isEmpty(message)) {<br />
+<br />
+SmsManager smsManager = SmsManager.getDefault();<br />
+<br />
+PendingIntent sentIntent = PendingIntent.getBroadcast(context,<br />
+0, new Intent(SENT_SMS_ACTION), 0);<br />
+PendingIntent deliveredIntent = PendingIntent.getActivity(<br />
+context, 0, new Intent(DELIVERED_SMS_ACTION), 0);<br />
+<br />
+context.registerReceiver(new BroadcastReceiver() {<br />
+@Override<br />
+public void onReceive(Context context, Intent intent) {<br />
+switch (getResultCode()) {<br />
+case Activity.RESULT_OK:<br />
+Log.i("sendSmsRet", "Activity.RESULT_OK");<br />
+break;<br />
+case SmsManager.RESULT_ERROR_GENERIC_FAILURE:<br />
+Log.i("sendSmsRet",<br />
+"SmsManager.RESULT_ERROR_GENERIC_FAILURE");<br />
+break;<br />
+case SmsManager.RESULT_ERROR_NO_SERVICE:<br />
+Log.i("sendSmsRet",<br />
+"SmsManager.RESULT_ERROR_NO_SERVICE");<br />
+break;<br />
+case SmsManager.RESULT_ERROR_NULL_PDU:<br />
+Log.i("sendSmsRet",<br />
+"SmsManager.RESULT_ERROR_NULL_PDU");<br />
+break;<br />
+case SmsManager.RESULT_ERROR_RADIO_OFF:<br />
+Log.i("sendSmsRet",<br />
+"SmsManager.RESULT_ERROR_RADIO_OFF");<br />
+break;<br />
+}<br />
+}<br />
+}, new IntentFilter(SENT_SMS_ACTION));<br />
+<br />
+context.registerReceiver(new BroadcastReceiver() {<br />
+@Override<br />
+public void onReceive(Context context, Intent intent) {<br />
+switch (getResultCode()) {<br />
+case Activity.RESULT_OK:<br />
+Log.i("sendSmsRet", "RESULT_OK");<br />
+break;<br />
+case Activity.RESULT_CANCELED:<br />
+Log.i("sendSmsRet", "Activity.RESULT_OK");<br />
+break;<br />
+}<br />
+}<br />
+}, new IntentFilter(DELIVERED_SMS_ACTION));<br />
+// 如果字数超过70,需拆分成多条短信发送<br />
+if (message.length() &gt; 70) {<br />
+List&lt;String&gt; msgs = smsManager.divideMessage(message);<br />
+for (String msg : msgs) {<br />
+if (!TextUtils.isEmpty(msg))<br />
+smsManager.sendTextMessage(phoneMobile, null, msg,<br />
+sentIntent, deliveredIntent);<br />
+}<br />
+} else {<br />
+smsManager.sendTextMessage(phoneMobile, null, message,<br />
+sentIntent, null);<br />
+}<br />
+<br />
+}<br />
+} else {<br />
+Uri uri = Uri.parse("smsto://" + phoneMobile);<br />
+Intent intent = new Intent(Intent.ACTION_SENDTO, uri);<br />
+intent.putExtra("sms_body", message);<br />
+context.startActivity(intent);<br />
+}<br />
+}<br />
+</p>

@@ -1,0 +1,5 @@
+<span style="color:#333333;font-family:Helvetica, Tahoma, Arial, sans-serif;font-size:14.399999618530273px;line-height:24px;background-color:#F5F5F5;">原因是在eclipse编辑环境中没有找到对应的include中的文件。解决方法是将包含该文件的include目录作为新的linked&nbsp;folder加入工程中。具体方法如下：</span><br />
+<span style="color:#333333;font-family:Helvetica, Tahoma, Arial, sans-serif;font-size:14.399999618530273px;line-height:24px;background-color:#F5F5F5;">1.&nbsp;右击工程-&gt;New-&gt;Folder</span><br />
+<span style="color:#333333;font-family:Helvetica, Tahoma, Arial, sans-serif;font-size:14.399999618530273px;line-height:24px;background-color:#F5F5F5;">2.&nbsp;对话框中点击Advanced</span><br />
+<span style="color:#333333;font-family:Helvetica, Tahoma, Arial, sans-serif;font-size:14.399999618530273px;line-height:24px;background-color:#F5F5F5;">3.&nbsp;选择Link&nbsp;to&nbsp;alternate&nbsp;location&nbsp;(Linked&nbsp;Folder)，选择需要的include目录</span><br />
+<span style="color:#333333;font-family:Helvetica, Tahoma, Arial, sans-serif;font-size:14.399999618530273px;line-height:24px;background-color:#F5F5F5;">4.&nbsp;Finish后刷新工程，问题解决。</span>

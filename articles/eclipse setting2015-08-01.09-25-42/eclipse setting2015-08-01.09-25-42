@@ -1,0 +1,15 @@
+<p style="color:#333333;font-family:Arial;font-size:14.399999618530273px;background-color:#FFFFFF;">
+	打开eclipse目录下的eclipse.ini文件，添加上一行
+</p>
+<p style="color:#333333;font-family:Arial;font-size:14.399999618530273px;background-color:#FFFFFF;">
+	&nbsp;
+</p>
+<p style="color:#333333;font-family:Arial;font-size:14.399999618530273px;background-color:#FFFFFF;">
+	-Duser.name="whateveryouwant"
+</p>
+<p style="color:#333333;font-family:Arial;font-size:14.399999618530273px;background-color:#FFFFFF;">
+	&nbsp;
+</p>
+<p style="color:#333333;font-family:Arial;font-size:14.399999618530273px;background-color:#FFFFFF;">
+	这样在eclipse中的${user}变量的值就变成了whateveryouwant
+</p>

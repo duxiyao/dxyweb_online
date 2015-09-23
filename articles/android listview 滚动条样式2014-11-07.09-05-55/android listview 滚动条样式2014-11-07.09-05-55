@@ -1,0 +1,21 @@
+<p>
+	<a href="http://www.2cto.com/kf/201301/185427.html" target="_blank">http://www.2cto.com/kf/201301/185427.html</a>
+</p>
+<p>
+	<br />
+&nbsp; &nbsp; &nbsp; &nbsp; android:scrollbarTrackVertical="@drawable/consult_scrollbar"<br />
+&nbsp; &nbsp; &nbsp; &nbsp; android:scrollbarThumbVertical="@drawable/consult_scrollbar"<br />
+</p>
+<p>
+	<br />
+</p>
+<p>
+	&nbsp; &nbsp; &lt;ListView<br />
+&nbsp; &nbsp; &nbsp; &nbsp; android:id="@+id/listView"<br />
+&nbsp; &nbsp; &nbsp; &nbsp; android:layout_width="match_parent"<br />
+&nbsp; &nbsp; &nbsp; &nbsp; android:layout_height="wrap_content"<br />
+&nbsp; &nbsp; &nbsp; &nbsp; android:divider="@drawable/consult_coin_dividing"&nbsp;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; android:scrollbarTrackVertical="@drawable/consult_scrollbar"<br />
+&nbsp; &nbsp; &nbsp; &nbsp; android:scrollbarThumbVertical="@drawable/consult_scrollbar"&gt;<br />
+&nbsp; &nbsp; &lt;/ListView&gt;<br />
+</p>

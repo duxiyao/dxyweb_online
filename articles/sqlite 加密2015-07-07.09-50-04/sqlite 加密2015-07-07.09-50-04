@@ -1,0 +1,23 @@
+<p>
+	<a href="http://blog.csdn.net/sziicool/article/details/18728153" target="_blank">http://blog.csdn.net/sziicool/article/details/18728153</a>
+</p>
+<p>
+	<a href="https://www.zetetic.net/sqlcipher/sqlcipher-api/#cipher_default_use_hmac" target="_blank">https://www.zetetic.net/sqlcipher/sqlcipher-api/#cipher_default_use_hmac</a>
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<div>
+		&nbsp;官网：<br />
+<img src="file://C:\Users\ADMINI~1\AppData\Local\Temp\%W@GJ$ACOF(TYDYECOKVDYB.png" />https://www.zetetic.net/sqlcipher/sqlcipher-api/#attach<br />
+前置条件：<br />
+1.下载sqlcipher查看工具<br />
+2.将sqlcipher.exe配置到环境变量中<br />
+<br />
+开始操作：<br />
+1.sqlcipher.exe&nbsp;&nbsp;XXX.db;//打开指定数据库<br />
+2&nbsp;PRAGMA&nbsp;KEY&nbsp;=&nbsp;'XXXX'&nbsp;&nbsp;&nbsp;//输入密钥获取操作权限<br />
+3&nbsp;PRAGMA&nbsp;REKEY&nbsp;='XXX'&nbsp;&nbsp;&nbsp;//修改密钥，在知道旧密钥的前提下&nbsp;
+	</div>
+</p>

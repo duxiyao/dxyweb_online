@@ -1,0 +1,28 @@
+<a href="http://blog.csdn.net/mldxs/article/details/38751773">adb 查看最上层成activity名字</a><br />
+<p>
+	<br />
+</p>
+<p>
+	<p style="font-family:Arial;font-size:14px;background-color:#FFFFFF;">
+		linux:
+	</p>
+	<p style="font-family:Arial;font-size:14px;background-color:#FFFFFF;">
+		adb shell dumpsys activity | grep "mFocusedActivity"
+	</p>
+	<p style="font-family:Arial;font-size:14px;background-color:#FFFFFF;">
+		<br />
+	</p>
+	<p style="font-family:Arial;font-size:14px;background-color:#FFFFFF;">
+		windows:
+	</p>
+	<p style="font-family:Arial;font-size:14px;background-color:#FFFFFF;">
+		adb shell dumpsys activity | findstr "mFocusedActivity"
+	</p>
+	<p>
+		<br />
+	</p>
+启动命令
+</p>
+<p>
+	<span style="color:#333333;font-family:'Helvetica Neue', Helvetica, Tahoma, Arial, STXihei, 'Microsoft YaHei', 微软雅黑, sans-serif;font-size:16px;line-height:27.1875px;background-color:#FEFEFE;">adb shell "am start -n com.tencent.mm/com.tencent.mm.ui.LauncherUI"</span>
+</p>

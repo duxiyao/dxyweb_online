@@ -1,0 +1,38 @@
+<p>
+	<a href="http://www.trinea.cn/android/java-android-thread-pool/" target="_blank">http://www.trinea.cn/android/java-android-thread-pool/</a>
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<br />
+public class OtherObject {<br />
+public void await() {<br />
+synchronized (this) {<br />
+try {<br />
+wait();<br />
+} catch (InterruptedException e) {<br />
+// TODO Auto-generated catch block<br />
+e.printStackTrace();<br />
+}<br />
+}<br />
+}<br />
+<br />
+public void anotify() {<br />
+synchronized (this) {<br />
+notifyAll();<br />
+}<br />
+}<br />
+//	public synchronized void await() {<br />
+//		try {<br />
+//			wait();<br />
+//		} catch (InterruptedException e) {<br />
+//			e.printStackTrace();<br />
+//		}<br />
+//	}<br />
+//<br />
+//	public synchronized void anotify() {<br />
+//		notifyAll();<br />
+//	}<br />
+}<br />
+</p>
