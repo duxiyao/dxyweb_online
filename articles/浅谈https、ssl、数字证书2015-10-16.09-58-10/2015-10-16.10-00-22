@@ -1,0 +1,8 @@
+DefaultHttpClient httpclient = new DefaultHttpClient();<br />
+SSLSocketFactory socketFactory = new SSLSocketFactory(null);<br />
+<br />
+Scheme sch = new Scheme(scheme, socketFactory, port);//scheme=https<br />
+<br />
+httpclient.getConnectionManager().getSchemeRegistry().register(sch);<br />
+<br />
+return httpclient;<br />
